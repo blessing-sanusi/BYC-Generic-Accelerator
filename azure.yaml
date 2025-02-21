@@ -1,0 +1,22 @@
+environment:
+  name: Generic-Build-your-own-copilot-Solution-Accelerator
+  location: eastus
+
+parameters:
+  solutionPrefix:
+    type: string
+    default: bs-azdtest  
+  otherLocation:
+    type: string
+    default: eastus2
+  baseUrl:
+    type: string
+    default: 'https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator'
+
+deployment:
+  mode: Incremental
+  template: ./infrastructure/deployment.bicep  # Path to the main.bicep file inside the 'deployment' folder
+  parameters:
+    solutionPrefix: ${parameters.solutionPrefix}
+    otherLocation: ${parameters.otherLocation}
+    baseUrl: ${parameters.baseUrl}
