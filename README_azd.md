@@ -1,4 +1,4 @@
-# (Preview) Sample Chat App with AOAI
+# Sample Chat App with AOAI
 
 ## Deploying with the Azure Developer CLI
 
