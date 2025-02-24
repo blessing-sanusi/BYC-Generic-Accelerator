@@ -15,7 +15,7 @@ parameters:
 
 deployment:
   mode: Incremental
-  template: ./infrastructure/deployment.bicep  # Path to the main.bicep file inside the 'deployment' folder
+  template: ./infra/main.bicep  # Path to the main.bicep file inside the 'deployment' folder
   parameters:
     solutionPrefix: ${parameters.solutionPrefix}
     otherLocation: ${parameters.otherLocation}
